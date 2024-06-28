@@ -59,8 +59,6 @@ function key_handler(event) {
     let key_code = event.key || event.keyCode || event.which;
     if (key_code == 'a' || key_code == 'A' || key_code == 65) {
         guess_best_action();
-    } else {
-        console.log(key_code);
     }
 }
 document.addEventListener("keydown", key_handler);
